@@ -76,6 +76,7 @@ export default function Cats() {
                   type='radio'
                   name='indoor-outdoor'
                   value='indoor'
+                  checked
                 />{' '}
                 Indoor
               </label>
@@ -91,8 +92,28 @@ export default function Cats() {
             </fieldset>
             <fieldset>
               <legend>What's your cat's personality?</legend>
-              <input id='loving' type='checkbox' />{' '}
-              <label htmlFor='loving'>Loving</label>
+              <input
+                id='loving'
+                type='checkbox'
+                name='personality'
+                value='loving'
+                checked
+              />{' '}
+              <label for='loving'>Loving</label>
+              <input
+                id='lazy'
+                type='checkbox'
+                name='personality'
+                value='lazy'
+              />{' '}
+              <label for='lazy'>Lazy</label>
+              <input
+                id='energetic'
+                type='checkbox'
+                name='personality'
+                value='energetic'
+              />{' '}
+              <label for='energetic'>Energetic</label>
             </fieldset>
             <input
               type='text'
@@ -104,6 +125,12 @@ export default function Cats() {
           </form>
         </section>
       </main>
+      <footer>
+        <p>
+          No Copyright -{' '}
+          <a href='https://www.freecodecamp.org'>freeCodeCamp.org</a>
+        </p>
+      </footer>
     </div>
   );
 }
